@@ -1,0 +1,8 @@
+var searchData=
+[
+  ['server_2eh_0',['server.h',['../server_8h.html',1,'']]],
+  ['shouldremoveresult_1',['ShouldRemoveResult',['../namespacegrpc__qc__simulator.html#ab97b8366f02f125a697054fc0aac08bd',1,'grpc_qc_simulator']]],
+  ['simulate_5fquantum_5fcircuit_2',['simulate_quantum_circuit',['../namespacequantum__simulator.html#a7ef3db99560da95734cb2345919d8fe0',1,'quantum_simulator']]],
+  ['simulatorserviceimpl_3',['SimulatorServiceImpl',['../classgrpc__qc__simulator_1_1SimulatorServiceImpl.html',1,'grpc_qc_simulator::SimulatorServiceImpl'],['../classgrpc__qc__simulator_1_1SimulatorServiceImpl.html#a8f6377bd46240cf25731d842ac267b02',1,'grpc_qc_simulator::SimulatorServiceImpl::SimulatorServiceImpl(const std::filesystem::path &amp;job_results_dir, JobQueue &amp;job_queue, quill::Logger *logger)']]],
+  ['submitjob_4',['SubmitJob',['../classgrpc__qc__simulator_1_1SimulatorServiceImpl.html#ac423e6dc21a02f35e940c343ee21f716',1,'grpc_qc_simulator::SimulatorServiceImpl']]]
+];

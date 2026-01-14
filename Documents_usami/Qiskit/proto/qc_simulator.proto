@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package qc_simulator;
+
+message SubmitJobRequest {
+  string token = 1;
+  string circuit_language = 2;
+  string language_version = 3;
+  string circuit = 4;
+  int32 n_shots = 5;
+}
+
+message SubmitJobResponse {
+  int32 job_id = 1;
+}
+
+message GetResultRequest {
+  string token = 1;
+  int32 job_id = 2;
+}
+
+message GetResultResponse {
+  int32 job_id = 1;
+  enum Status{
+    UNKNOWN = 0;
+    QUEUED = 1;
+    RUNNING = 2;
+    COMPLETED = 3;
+    FAILED = 4;
+  }
+  Status status = 2;
+  string message = 3;
+  string result_json = 4;
+}
+
+service SimulatorService {
+  rpc SubmitJob(SubmitJobRequest) returns (SubmitJobResponse) {}
+  rpc GetResult(GetResultRequest) returns (GetResultResponse) {}
+}
